@@ -1,10 +1,17 @@
 <template>
   <div class="flex">
-    <div class="w-3/12 h-screen bg-gray-700 sticky top-0">
+    <div
+      class="w-3/12 h-screen bg-gray-700 sticky top-0"
+      id="sidenav-1"
+      data-te-sidenav-init
+      data-te-sidenav-hidden="false"
+      data-te-sidenav-mode="side"
+      data-te-sidenav-content="#content"
+    >
       <VueSidebar />
     </div>
 
-    <div class="w-full">
+    <div class="w-full" id="content">
       <VueDashboard />
     </div>
   </div>

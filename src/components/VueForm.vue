@@ -1,6 +1,8 @@
 <template>
-  <section class="content w-full py-7 px-4 bg-white flex justify-center">
-    <div>
+  <section
+    class="content w-full py-7 px-4 bg-white flex justify-center rounded-lg"
+  >
+    <div class="caixa-input-100">
       <div class="flex justify-between">
         <h1 class="form-title">Cadastro Clientes</h1>
         <div class="form-options">
