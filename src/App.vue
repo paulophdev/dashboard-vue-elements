@@ -1,11 +1,13 @@
 <template>
+  <!--  -->
   <div class="flex">
     <div
-      class="w-3/12 h-screen bg-gray-700 sticky top-0"
+      class="absolute left-0 w-3/12 h-screen bg-gray-700 z-[1035] lg:sticky lg:top-0"
+      :style="myStyle"
       id="sidenav-1"
       data-te-sidenav-init
       data-te-sidenav-hidden="false"
-      data-te-sidenav-mode="side"
+      :data-te-sidenav-mode="sidenavMod"
       data-te-sidenav-content="#content"
     >
       <VueSidebar />
@@ -27,8 +29,22 @@ export default {
     VueSidebar,
     VueDashboard,
   },
+  computed: {
+    myStyle() {
+      return window.innerWidth <= 768
+        ? {
+            transform: "translateX(-100%)",
+            top: "76px",
+          }
+        : "";
+    },
+    sidenavMod() {
+      return window.innerWidth <= 768 ? "over" : "side";
+    },
+  },
 };
 </script>
+
 <style>
 body {
   background-color: #dcdcdc;

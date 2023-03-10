@@ -1,6 +1,6 @@
 <template>
   <VueHead />
-  <div class="p-10">
+  <div class="p-10 overflow-auto">
     <VueForm />
   </div>
 </template>

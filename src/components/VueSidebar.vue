@@ -6,6 +6,8 @@
   </div>
   <div>
     <VueItemMenu v-for="(menuItem, i) in menuItems" :key="i" :data="menuItem" />
+
+    <div style="margin-bottom: 100px"></div>
   </div>
 </template>
 
@@ -210,6 +212,76 @@ const menuItems = [
             path: "/opcao03",
           },
         ],
+      },
+    ],
+  },
+  {
+    name: "CADASTROS",
+    items: [
+      {
+        id: "1g32s",
+        type: "urlLink", // urlLink or groupLink
+        name: "Cadastro 01",
+        path: "/cadastro01",
+        icon: `
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="text-gray-300 w-4 h-4 mr-2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        `,
+        data: [],
+      },
+      {
+        id: "s7dj3",
+        type: "urlLink", // urlLink or groupLink
+        name: "Cadastro 02",
+        path: "/cadastro02",
+        icon: `
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="text-gray-300 w-4 h-4 mr-2"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="6" cy="6" r="3"></circle>
+            <circle cx="6" cy="18" r="3"></circle>
+            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+          </svg>
+        `,
+        data: [],
+      },
+      {
+        id: "a65sd",
+        type: "urlLink", // urlLink or groupLink
+        name: "Cadastro 03",
+        path: "/cadastro03",
+        icon: `
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="text-gray-300 w-4 h-4 mr-2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"
+            ></path>
+          </svg>
+        `,
+        data: [],
       },
     ],
   },
